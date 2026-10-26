@@ -28,14 +28,14 @@ Tất cả media do tác giả tự tạo (Python/Pillow, ffmpeg, espeak-ng). Du
 | `video/intro.webm` | Video giới thiệu WebM | Tự dựng | Nhóm sở hữu | như trên | 361.9 |
 | `video/intro-poster.webp` | Poster video giới thiệu (M3p) | Trích từ video | Nhóm sở hữu | không cần (poster) | 3.4 |
 | `video/intro.vi.vtt` | Phụ đề video giới thiệu | Tự viết | Nhóm sở hữu | — | 0.4 |
-| `video/bai-2.mp4` | Video bài 2 – 60 s MP4 (M9) | Tự dựng | Nhóm sở hữu | Phụ đề bai-2.vi.vtt + bản chữ | 789.9 |
-| `video/bai-2.webm` | Video bài 2 WebM | Tự dựng | Nhóm sở hữu | như trên | 723.3 |
+| `video/bai-2.mp4` | Video bài 2 – 60 s MP4 (M9) | Tự dựng | Nhóm sở hữu | Phụ đề bai-2.vi.vtt + bản chữ | 414.5 |
+| `video/bai-2.webm` | Video bài 2 WebM | Tự dựng | Nhóm sở hữu | như trên | 468.0 |
 | `video/bai-2-poster.webp` | Poster video bài 2 | Trích từ video | Nhóm sở hữu | không cần (poster) | 7.4 |
 | `video/bai-2.vi.vtt` | Phụ đề bài 2 | Tự viết | Nhóm sở hữu | — | 1.1 |
 | `audio/bai-2.mp3` | Âm thanh bài 2 MP3 | espeak-ng (giọng tổng hợp) | Dùng nội bộ; thay bằng giọng thu thật | Bản chữ trên trang | 360.6 |
 | `audio/bai-2.ogg` | Âm thanh bài 2 OGG | espeak-ng | như trên | như trên | 169.3 |
 
-Tổng dung lượng thư mục media: 2908 KB.
+Tổng dung lượng thư mục media: 2277 KB.
 
 ## Quy trình cập nhật media
 1. Đặt tệp gốc vào nơi lưu trữ riêng (không commit tệp gốc nặng).
