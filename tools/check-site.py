@@ -37,7 +37,7 @@ for f, p in parsed.items():
     if not p.title.strip(): fail(f'{f}: thiếu title')
     for t in ('header', 'nav', 'main', 'footer'):
         if t not in p.tags: fail(f'{f}: thiếu <{t}>')
-    if p.cur != 1: fail(f'{f}: có {p.cur} aria-current="page" (menu hoặc breadcrumb; cần đúng 1)')
+    if not 1 <= p.cur <= 2: fail(f'{f}: có {p.cur} aria-current="page" (menu hoặc breadcrumb; cần 1–2: menu và breadcrumb)')
     if p.style: fail(f'{f}: có {p.style} thuộc tính style inline')
     for im in p.imgs:
         if 'alt' not in im: fail(f'{f}: ảnh {im.get("src")} thiếu alt')
