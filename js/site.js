@@ -3,14 +3,12 @@
   const $ = (s, r = document) => r.querySelector(s);
   const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
   document.documentElement.classList.add('js');
-
   const toggle = $('.nav-toggle'), menu = $('#menu');
   toggle?.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') !== 'true';
     toggle.setAttribute('aria-expanded', open);
     menu.classList.toggle('open', open);
   });
-
   document.querySelectorAll('[data-player]').forEach(box => {
     const v = $('video', box), track = v.textTracks[0];
     v.removeAttribute('controls');                       // thay bằng thanh điều khiển tùy biến
@@ -25,7 +23,6 @@
     const [pp, seek, time, cc] = ['.pp', '.seek', '.time', '.cc'].map(s => $(s, bar));
     const fail = text => { msg.textContent = text; msg.hidden = false; };
     if (track) track.mode = 'showing';
-
     pp.addEventListener('click', () => {
       if (!v.paused) return v.pause();
       msg.hidden = true;
@@ -39,13 +36,12 @@
     });
     seek.addEventListener('input', () => { if (v.duration) v.currentTime = (seek.value / 100) * v.duration; });
     cc.addEventListener('click', () => {
-      const on = track.mode !== 'showing';
+      if (!track) return; const on = track.mode !== "showing";
       track.mode = on ? 'showing' : 'hidden'; cc.setAttribute('aria-pressed', on);
     });
     $('source:last-of-type', v).addEventListener('error', () => fail('Không tải được video. Hãy đọc bản chữ bên dưới.'));
     v.addEventListener('error', () => fail('Video bị lỗi khi đang phát. Hãy tải lại trang hoặc đọc bản chữ.'));
   });
-
   const more = $('#more-btn');                           // «Xem thêm»: nạp media.json bằng fetch
   more?.addEventListener('click', async () => {
     const status = $('#more-status'); more.disabled = true; status.textContent = 'Đang tải…';
