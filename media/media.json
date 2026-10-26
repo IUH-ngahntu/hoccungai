@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Video giới thiệu Học Cùng AI",
+      "type": "Video MP4",
+      "href": "video/intro.mp4",
+      "size_kb": 310
+    },
+    {
+      "title": "Video bài 2: Dùng AI có trách nhiệm",
+      "type": "Video MP4",
+      "href": "video/bai-2.mp4",
+      "size_kb": 790
+    },
+    {
+      "title": "Infographic 3 nguyên tắc",
+      "type": "Ảnh WebP",
+      "href": "img/infographic-bai-2.webp",
+      "size_kb": 28
+    },
+    {
+      "title": "Infographic 3 nguyên tắc (bản in)",
+      "type": "Tệp PDF",
+      "href": "img/infographic-bai-2.pdf",
+      "size_kb": 54
+    },
+    {
+      "title": "Bản âm thanh bài 2",
+      "type": "Âm thanh MP3",
+      "href": "audio/bai-2.mp3",
+      "size_kb": 361
+    },
+    {
+      "title": "Phụ đề bài 2",
+      "type": "Phụ đề WebVTT",
+      "href": "video/bai-2.vi.vtt",
+      "size_kb": 1
+    },
+    {
+      "title": "Phụ đề video giới thiệu",
+      "type": "Phụ đề WebVTT",
+      "href": "video/intro.vi.vtt",
+      "size_kb": 0
+    }
+  ]
+}
